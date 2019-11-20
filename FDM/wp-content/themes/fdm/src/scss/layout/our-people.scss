@@ -1,0 +1,205 @@
+
+/* note to self - define device break points  */
+.our-people{
+
+  margin-top:40px;
+  margin-bottom:40px;
+
+  .our-people-grid{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    column-gap:30px;
+
+    .text-block a{
+      width: 250px;
+      max-width: 400px;
+      padding: 20px;
+
+      &:after{
+        content: "\203A";
+        font-size: 20px;
+        margin-left: 10px;
+      }
+    }
+    .slick-wrapper{
+      overflow:hidden; padding:55px 60px;
+
+      .slick-prev{
+        color: transparent;
+      }
+
+      .slick-next{
+        background-color: $fdm-white;
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        &:hover{
+          background-color: $fdm-grey;
+          color: $fdm-white;
+        }
+      }
+      @media all and (max-width:400px) {
+        padding:20px 10px;
+      }
+    }
+    .quad{   display: grid;
+    			grid-template-columns: 1fr 1fr;
+    			  row-gap: 30px;
+    }
+    @media all and (max-width:1000px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+.people-cell img{ max-width:100%;}
+  .people-cell{ max-width:260px; margin:0px auto;}
+
+
+.image-grid{ padding:30px;}
+
+  /** Slider item roll **/
+.people-cont {margin: 0 auto; max-width: 260px;}
+.people-cell .hp-caption-overlay { top:auto;}
+
+ h2{ margin-left:auto; margin-right:auto; text-align:center;}
+
+.fdm-people-grid{
+  display: grid;
+  grid-gap: 10px;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin:0px auto;
+   @media all and (max-width:800px) {
+    grid-template-columns: repeat(2, 50%);
+    margin:0px .5%;
+  }
+  @media all and (max-width:400px) {
+    grid-template-columns: repeat(1, 100%);
+    margin:0px 20px;
+  }
+
+  .fdm-grid-block{
+    img{ max-width:100%;}
+    .fdm-person-teaser [name=name]{
+      color:$fdm-blue;
+      font-weight:700;
+    }
+    span{
+      display:block;
+    }
+    .fdm-person-teaser [name=department], .fdm-person-teaser [name=city]{
+      font-weight:bold;
+      font-size:13px;
+    }
+    .fdm-person-teaser [name=info]{
+    margin:10px 0px 40px;
+    }
+  }
+
+}
+
+
+.fdm-people-filters{
+  display:block;
+  width:800px;
+  margin:0 auto;
+  max-width:100%;
+  select {
+    width:32%;
+    display:inline-block;
+    margin:0 0.5%;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+}
+
+
+
+}
+
+.fdm-people-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 500;
+  .fdm-overlay-close {
+    line-height:1em;
+    position: absolute;
+    z-index: 502;
+    top: 15px;
+    right: 15px;
+    padding:0;
+    background-color:transparent;
+    text-decoration:underline;
+    color:black;
+    box-shadow:none;
+    text-transform:none;
+    border:none;
+    &:hover {
+      box-shadow:none;
+    }
+  }
+}
+
+.fdm-person-profile {
+  position: absolute;
+  z-index: 501;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  max-width:96%;
+  max-height: 80%;
+  overflow: auto;
+  background-color: #cccccc;
+  padding: 50px 20px;
+  .inner {
+    overflow:auto; width:100%;
+  }
+  p {
+    break-inside: avoid;
+  }
+  img {
+    width:45%;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    float: right;
+    @media (max-width: 600px) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  [name=department] {
+    font-size:15px;
+    line-height:1em;
+    position: absolute;
+    z-index: 502;
+    top: 20px;
+    left: 20px;
+    padding:0;
+    font-weight:bold;
+  }
+  [name=name] {
+    font-size:15px;
+    font-weight:bold;
+    text-transform:uppercase;
+    color:white;
+    margin-bottom:5px;
+  }
+  [name=job-title], [name=city] {
+    font-size:17px;
+    font-weight:bold;
+    display:block;
+  }
+  [name=bio] {
+    margin-top:24px;
+    font-size:16px;
+    line-height:1.6em;
+  }
+}

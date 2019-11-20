@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("fonts/OpenSans-Light.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("fonts/OpenSans-LightItalic.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("fonts/OpenSans-Regular.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("fonts/OpenSans-Italic.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("fonts/OpenSans-Bold.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("fonts/OpenSans-BoldItalic.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("fonts/OpenSans-ExtraBold.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("fonts/OpenSans-ExtraBoldItalic.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans-Cond';
+  src: url("fonts/OpenSans-CondBold.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans-Cond';
+  src: url("fonts/OpenSans-CondLight.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans-Cond';
+  src: url("fonts/OpenSans-CondLightItalic.ttf"); }
+
+h1 {
+  color: pink;
+}
+
+.misha_loadmore{
+	background-color: #ddd;
+	border-radius: 2px;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 800;
+	letter-spacing:1px;
+	cursor:pointer;
+	text-transform: uppercase;
+	padding: 10px 0;
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+}
+.misha_loadmore:hover{
+	background-color: #767676;
+	color: #fff;
+}

@@ -1,0 +1,43 @@
+#fdm-list{
+
+  width: 80%;
+  margin: auto;
+  background-color: $fdm-beige;
+  justify: center;
+  padding: 20px;
+
+ h2{ margin-left:auto; margin-right:auto; text-align:center;}
+
+  .fdm-list-container{
+    background-color: $fdm-beige;
+  }
+  
+  ul li{
+    list-style: none;
+    padding-left: 110px;
+    padding-top: 10px;
+  }
+
+  .content{
+    width: 80%;
+    margin-left: 160px;
+  }
+
+  @media(max-width: 1000px){
+    width: 95%;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify: center;
+
+    .content{
+      margin-left: 10px;
+    }
+
+    ul li{
+      padding-left: 0;
+    }
+
+
+
+  }
+}

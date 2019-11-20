@@ -1,0 +1,16 @@
+# Ignore Please #
+#################
+node_modules
+
+
+# Temp Files #
+# ############
+*.un~
+*.css~
+*.DS_Store
+*wp-config.php
+wp-admin/
+wp-includes/
+wp-content/plugins/
+wp-content/uploads/wp-migrate-db/
+wp-content/mu-plugins/

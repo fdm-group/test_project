@@ -1,0 +1,17 @@
+/** Home Map **/
+.map-section{ padding:40px 0px; }
+
+.map-section h2{ text-align:center; }
+.fdm-map { margin: auto; }
+.fdm-map-location [name=city] { display: none; font-weight: bold; }
+#home-map  .l-section-h.i-cf { padding-bottom: 0px; }
+.fdm-map-legend {text-align: center;}
+.fdm-map-legend label {display: inline-block; padding: 6px;}
+.fdm-map-legend label input {vertical-align: middle;}
+
+#maptext{ clear:both;}
+
+.fdm-map-search{ display:inline-block; padding:6px; }
+.fdm-map-search input{ display:inline-block;  width:auto;}
+.fdm-map-search label{ display:inline-block; }
+#searchButton{ background-color:#0a0a09; color:#fff; font-weight:100; line-height:46px; border:0px; padding:0px 10px; cursor:pointer; }

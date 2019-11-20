@@ -1,0 +1,40 @@
+
+.youtube-slider{
+
+   .slider_wrapper{
+    background-color:$fdm-beige;
+  }
+  .container-lrg{
+    background-color:$fdm-white;
+    text-align:center;
+    padding:0px 0px;
+  }
+  .youtube-block{
+      max-width:1026px;
+      margin:0px auto;
+  }
+  .grey-block{
+  margin: 0px auto;
+  z-index: 1;
+ 
+  position: relative;
+
+    @media all and (max-width:1000px) {
+      width:240px;
+    }
+   @media all and (max-width:760px) {
+       width:300px;
+    }
+     @media all and (max-width:400px) {
+       width:auto;
+       padding:20px;
+       max-width:100%;
+    }
+   
+
+ 
+  }
+}
+
+
+

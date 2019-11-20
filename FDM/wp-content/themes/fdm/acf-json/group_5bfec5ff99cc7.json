@@ -1,0 +1,69 @@
+{
+    "key": "group_5bfec5ff99cc7",
+    "title": "Meta Tags",
+    "fields": [
+        {
+            "key": "field_5bfec6057495c",
+            "label": "Meta Title",
+            "name": "fdm_meta_title",
+            "type": "text",
+            "instructions": "Contents of HTML title tag to be used. Aim to keep titles under 70 characters. For best practice see: http:\/\/moz.com\/learn\/seo\/title-tag",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5bfec6267495d",
+            "label": "Meta Description",
+            "name": "fdm_meta_desc",
+            "type": "textarea",
+            "instructions": "Meta description to be used on event archive pages. Aim for approximately 155 characters. For best practice see: http:\/\/moz.com\/learn\/seo\/meta-description.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1543423643
+}

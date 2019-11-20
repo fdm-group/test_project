@@ -1,0 +1,17 @@
+msgid "Centres"
+msgstr "Niederlassungen"
+
+msgid "Academies"
+msgstr "Niederlassungen mit FDM Academy"
+
+msgid "Placements"
+msgstr "Einsatzorte"
+
+msgid "No Thanks"
+msgstr "Nein Danke"
+
+msgid "We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it."
+msgstr "Cookies ermöglichen eine bestmögliche Bereitstellung unserer Dienste. Mit der Nutzung der FDM Website erklären Sie sich damit einverstanden, dass wir Cookies verwenden."
+
+msgid "Learn more"
+msgstr "Mehr Erfahren"

@@ -1,0 +1,109 @@
+
+.fdm-reports-component{
+
+	.fdm-report-filters-wrapper{
+		background-color:$fdm-lg_grey;
+	}
+	.fdm-report-filters{
+		
+		line-height: 46px;
+		select,  label {
+			font-size: 13px;
+			font-weight: bold;
+		}
+	}
+
+	.fdm-report-filters, .fdm-report-list{
+
+		padding: 20px 20px;
+
+		@media (min-width: 800px) {
+
+			padding: 20px auto;
+	
+		}
+		
+	}
+ 
+}
+
+
+
+
+
+
+@media (max-width: 980px) {
+	.fdm-report-filters [name=year] {
+		display: block;
+	}
+}
+
+
+
+.fdm-report-filters select, .fdm-report-filters label {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.fdm-report-filters select {
+	width: 120px;
+	margin-right: 20px;
+}
+
+.fdm-report-filters label {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.fdm-report-filters input[type=checkbox] {
+	vertical-align: baseline;
+	margin-right: 6px;
+	width: 18px;
+}
+
+.fdm-report-link {
+	margin-bottom: 20px;
+}
+
+.fdm-report-link [name=year] {
+	display: block;
+	font-weight: bold;
+	font-size: 13px;
+	color: $fdm-blue;
+	margin-bottom: 10px;
+}
+.fdm-report-link [name=year]::after {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	border-bottom: 3px solid $fdm-blue;
+	margin-left: 10px;
+}
+
+.fdm-report-link [name=title] {
+	font-size: 26px;
+}
+
+.fdm-report-link [name=download] {
+	float: right;
+	font-size: 13px;
+	font-weight: bold;
+	color: black;
+}
+
+.fdm-report-link [name=download]:hover {
+	text-decoration: underline;
+}
+
+.fdm-report-link .material-icons {
+	font-weight: normal;
+	font-size: 24px;
+	vertical-align: middle;
+	color: $fdm-blue;
+}
+
+@media (max-width: 600px) {
+	.fdm-report-link [name=download]{float:none;}
+	.fdm-report-link [name=title] {display:block;}
+}
+

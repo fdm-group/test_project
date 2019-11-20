@@ -1,0 +1,136 @@
+.html-block{
+	margin-top:40px;
+ 	margin-bottom:40px;
+
+	.wrapper{text-align: center;
+
+	.sweep-to-right{
+		text-transform: uppercase;
+	&::after {
+		content: "\003e";
+		margin-left: 10px;
+	}
+}
+
+.triple{
+	display: inline-block; margin: 0 auto; margin-top: 30px;
+}
+}
+
+
+	table{
+		width:100%;
+		max-width:100%;
+
+		td{
+		border-bottom:1px solid $fdm-lg_grey;
+		padding:.6rem 1rem;
+		}
+	}
+
+	.icon_img img{
+		max-width:40px;
+		margin-bottom: 30px;
+	}
+	&.white{
+		background-color:$fdm-white;
+	}
+
+	&.grey{
+		background-color:$fdm-beige;
+	}
+	.slider_wrapper{
+		width:90%;
+		margin:40px auto 80px;
+
+		.slick-prev, .slick-next{
+			background-color: $fdm-white;
+			font-size: 20px;
+	    border-radius: 50%;
+	    width: 50px;
+	    height: 50px;
+	    padding-top: 2px;
+			margin: auto;
+			&:hover{
+	      background-color: $fdm-grey;
+	      color: $fdm-white;
+	    }
+		}
+
+		.slick-prev{
+	    position: absolute;
+	    z-index: 1000;
+	    left: -45px;
+	  }
+
+	  .slick-next{
+	    right: -40px;
+	  }
+
+
+	}
+	.grey-block{ padding:20px; text-align:center;
+		&:hover{
+      border-bottom: 4px solid $fdm-blue;
+      background-color: black;
+      color: white;
+      transition: all 400ms ease-in;
+      transform: scale(1.1);
+      a{
+        display: block;
+      }
+
+    }
+	}
+	.car-img{ max-width:50px; margin:0px auto; margin-bottom: 30px;}
+
+	.people-cell img{ max-width:100%;}
+
+	.people-cell .hp-caption{ width:250px; margin:0px auto;}
+
+	.people-cell .hp-caption-overlay{ top:auto;}
+
+	@media only screen and (max-width: 760px) {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	tr { border-bottom: 1px solid $fdm-grey }
+		table{
+		td {
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid $fdm-lg_grey;
+			position: relative;
+			padding-left: 60%;
+			width:100% !important;
+			overflow:hidden;
+		}
+
+		td:before {
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+		}
+	}
+	/*
+	Label the data
+	*/
+
+	td:before { content: attr(data-heading); }
+}
+}

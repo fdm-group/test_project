@@ -1,0 +1,64 @@
+#fdm_quad_tiles{
+.quad-tiles{
+
+	padding:40px 0px;
+
+	.quad-slider{
+
+	    margin:0px auto;
+	    display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    row-gap: 30px;
+	    column-gap:30px;
+
+	    @media all and (max-width:760px) {
+	      grid-template-columns: 1fr;
+	    }
+	    .quad-cell{
+
+			z-index: 1;
+			font-size: 16px;
+			line-height: 20px;
+			padding: 60px 40px;
+			display: inline-block;
+			max-width:100%;
+			text-align:center;
+			height:470px;
+			position: relative;
+			background-color: $fdm-lg_grey;
+			img{
+		      	width:65px;
+		      	height:auto;
+	      	}
+	      	h2{
+		      	color:$fdm-black;
+		      	font-size:50px;
+		      	line-height:50px;
+	      	}
+	      	.deco-line{ margin:0px auto;}
+			 &:hover{
+		      border-bottom: 4px solid $fdm-blue;
+		      background-color: black;
+		      color: white;
+		      transition: all 400ms ease-in;
+		      transform: scale(1.1);
+
+		      a{
+		        display: block;
+		      }
+		      h2{
+	      		color:$fdm-white;
+	      		}
+
+	    	}
+	    a{
+	    display: none;
+	    color:$fdm-white;
+	    }
+
+			}
+	  }
+	}
+
+
+}

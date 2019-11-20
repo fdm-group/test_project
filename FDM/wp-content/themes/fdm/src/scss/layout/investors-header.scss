@@ -1,0 +1,53 @@
+
+.fdm-investors-header{
+	background-size:cover;
+	padding-top:110px;
+	padding-bottom:80px;
+	.fdm-investors-header-component{
+	 display: grid;
+	 grid-template-columns: 1fr 1fr;
+	 	@media all and (max-width:801px) {
+				grid-template-columns: 1fr;
+			}
+	}
+
+    
+
+	.fdm-investors-header-component{
+
+		.fdm-investors-header-sidebar{
+			@media all and (max-width:801px) {
+				display:none;
+			}
+			.inv-link{
+				clear:both;
+				width:300px;
+				font-weight:100;
+				padding-top:20px;
+				padding-bottom:20px;
+				margin-top:2px;
+				text-transform:uppercase;
+				font-size:16px;
+				&:hover{
+					font-weight:bold;
+				}
+			}
+		}
+
+		.fdm-investors-header-info{
+			width:325px;
+			margin-left:calc(50% -  162.5px);
+			@media all and (max-width:801px) {
+			  	margin-left:auto;
+			  	margin-right:auto;
+			  	max-width:95%;
+			}
+			background-color:$fdm-white;
+			padding:1.5rem;
+			h3{
+				font-size:45px;
+				color:$fdm-blue;
+			}
+		}
+	}
+}

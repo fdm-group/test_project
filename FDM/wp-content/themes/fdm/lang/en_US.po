@@ -1,0 +1,5 @@
+msgid "Centres"
+msgstr "Centers"
+
+msgid "Ex-Forces"
+msgstr "Veterans"

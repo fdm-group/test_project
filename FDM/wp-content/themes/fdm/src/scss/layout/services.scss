@@ -1,0 +1,169 @@
+
+.picture-blocks{
+  padding:40px 0px;
+  text-align:center;
+  background-size:cover;
+  .slick{
+    margin:0px 40px;
+  }
+
+  .slick-next, .slick-prev{
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+
+    &:hover{
+      background-color: $fdm-grey;
+      color: $fdm-white;
+    }
+  }
+
+  .slick-prev{
+    position: absolute;
+    z-index: 1000;
+    left: -45px;
+  }
+
+  .slick-next{
+    right: -40px;
+  }
+}
+
+.service-grid{
+
+  margin:0px 20px;
+
+  --content-width: 75vw;
+  --gutter: 40px;
+  --columns: 2;
+
+  // This is the calculation for the row height.
+  --row-size: calc(( var(--content-width) - (var(--gutter) * (var(--columns) - 1))) / var(--columns));
+  --caption-padding: 30px;
+  --caption-size: calc( ( var(--row-size) - (var(--caption-padding) * 2)) );
+
+    width: 100%;
+    max-width: var(--content-width);
+    div.picture-block{
+      height:var(--row-size);
+    }
+
+    div.hp-caption{
+
+      border-radius: 0.3em;
+      height: var(--caption-size);
+
+      @media only screen and (max-width: 480px) {
+
+        div{
+          padding: 0;
+        }
+
+      }
+    }
+
+   @media only screen and (min-width: 1140px) {
+
+
+      width: 490px;
+
+      div.picture-block{
+                  height:490px;
+      }
+      div.hp-caption{
+        height: 430px;
+      }
+
+
+
+   }
+     @media only screen and (max-width: 700px) {
+
+       --content-width: 100vw;
+       --columns: 1;
+        max-width: 100%;
+        margin: 0 auto;
+
+        --row-size: calc(( var(--content-width) - (var(--gutter) )));
+
+       height:var(--row-size);
+       width:var(--row-size);
+
+      --caption-size: calc(( var(--row-size) - (var(--caption-padding) * 2)) );
+
+      div.picture-block{
+                height:var(--row-size);
+      }
+
+    }
+   div.picture-block{
+      padding:var(--caption-padding);
+      background-size:cover;
+      &.blue{
+        background-color:$fdm-blue;
+      }
+      &.white{
+        background-color:$fdm-white;
+        .hp-caption-overlay-content{
+          color:$fdm-black;
+        }
+        .hp-caption {
+          &:hover {
+            .hp-caption-overlay-content{
+              color:$fdm-white;
+            }
+          }
+        }
+      }
+      &.grey{
+        background-color:$fdm-grey;
+      }
+   }
+
+  .hp-caption {
+    --caption-padding: calc((var(--caption-size)/100)*20);
+    .hs-caption-overlay-title {
+        padding: var(--caption-padding) 0;
+        position: absolute;
+        left: 0;
+        top: -75%;
+        width: 100%;
+        text-align: center;
+        font-size:50px;
+        line-height:50px;
+        font-weight:300;
+        transform: translateY(-50%);
+        transition: transform .35s ease-out, top .35s ease-out;
+    }
+    .hs-caption-overlay-content {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 0% 10% 15% 10%;
+      font-size:16px;
+      text-align:center;
+      p{ margin-bottom:0px;}
+      .mpc-button {
+        margin-top: 8%;
+        font-weight: 600;
+      }
+       @media only screen and (max-width: 1140px) {
+        padding: 0% 5% 10% 5%;
+       }
+    }
+    &:hover {
+      .hp-caption-overlay {
+        transform: translateY(0);
+        border-bottom:3px solid $fdm-blue;
+      }
+      .hs-caption-overlay-title {
+        top: 0px;
+        transform: none;
+      }
+    }
+  }
+}

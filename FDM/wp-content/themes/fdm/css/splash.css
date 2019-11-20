@@ -1,0 +1,109 @@
+/* Page Global */
+
+.login {
+  background: #000;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row-reverse;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  height: 100%;
+}
+
+#splash_image_container {
+  display: flex;
+  flex: 1;
+  height: 100%;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s !important;
+  -webkit-text-fill-color: #fff;
+}
+
+input[type=text]:focus, input[type=password]:focus, select:focus, textarea:focus {
+  border-color: #009FDF !important;
+  box-shadow: 0 0 2px rgba(0, 159, 223, .8) !important;
+}
+
+/* Logo overwrite */
+
+#login h1 a {
+  width: 320px;
+  height: 152px;
+  background-size: 320px;
+  background-repeat: no-repeat;
+  background-image: url(../icons/fdm_logo-white.png);
+}
+
+/* Notafication message */
+
+#login .message {
+  border-left: none;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding: 12px;
+  margin-left: 0;
+  margin-bottom: 20px;
+  background-color: transparent;
+  box-shadow: none;
+  text-align: center;
+  color: #fff;
+}
+
+/* Login form - !important due to styles loading outside */
+
+.login form {
+  max-width: 350px;
+  width: 350px;
+  margin-top: 20px !important;
+  margin-left: 0 !important;
+  padding: 26px 0 !important;
+  background: transparent !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .13) !important;
+}
+
+.login form label {
+  color: #fff;
+  /* font-size: 14px; */
+}
+
+.login form .input, .login input[type=text] {
+  background: transparent !important;
+  border: 0;
+  border-bottom: 4px solid #fff;
+  color: #fff !important;
+}
+
+/* Login button */
+
+.button-primary {
+  background: #009FDF !important;
+  border-color: #009FDF #009FDF #009FDF !important;
+  box-shadow: 0 1px 0 #009FDF !important;
+  text-shadow: 0 -1px 1px #009FDF, 1px 0 1px #009FDF, 0 1px 1px #009FDF, -1px 0 1px #009FDF !important;
+}
+
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover {
+  background: #00B45A !important;
+  border-color: #00B45A !important;
+  color: #fff;
+}
+
+/* Forgotton password | Back to blog*/
+
+.login #backtoblog, .login #nav {
+  text-align: center;
+  max-width: 350px;
+}
+
+.login #backtoblog a, .login #nav a {
+  text-decoration: none;
+  color: #fff !important;
+}

@@ -1,0 +1,35 @@
+msgid "Centres"
+msgstr "中心"
+
+msgid "Academies"
+msgstr "培训学院"
+
+msgid "Placements"
+msgstr "调配"
+
+msgid "We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it."
+msgstr "我们使用网路跟踪器来确保我们的网站为你提供最好的体验。如果你继续浏览本网站，我们将默认你同意。"
+
+msgid "Ok"
+msgstr "同意"
+
+msgid "All Regions"
+msgstr "所有地区"
+
+msgid "North America"
+msgstr "北美洲"
+
+msgid "Europe"
+msgstr "欧洲"
+
+msgid "APAC"
+msgstr "亚太地区"
+
+msgid "All Categories"
+msgstr "所有类别"
+
+msgid "Location"
+msgstr "地区"
+
+msgid "Learn more"
+msgstr "了解更多"
