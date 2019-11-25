@@ -1,0 +1,36 @@
+{
+  "name": "react-test",
+  "version": "0.1.26",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "test": "echo \" Error: no test specified \" ",
+    "start": "node index.js",
+    "client": "npm start --prefix client",
+    "build": "react-scripts build --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:4000/",
+  "devDependencies": {
+    "case-sensitive-paths-webpack-plugin": "^2.2.0"
+  }
+}
